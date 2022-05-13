@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact me</title>
+</head>
+
+<body>
+  <h1>Contact info</h1>
+  <ul>
+    <li><a href="mailto:namaahsw@gmail.com?subject=your_page_sucks">Personal email</a></li>
+    <li><a href="mailto:peter@indumedic.se?subject=feedback">Work email</a></li>
+    <li><a href="https://www.picng.com/upload/denied/png_denied_52828.png">Address</a></li>
+  </ul>
+  <hr size="3" noshade>
+  <form action="mailto:namaahsw@gmail.com" method="post" enctype="text/plain">
+    <!-- action can be a link, or sending a mail etc -->
+    <!-- enctype determines encryption used -->
+    <label for="name">Your name</label>
+    <input type="text" name="yourName" value="">
+    <!-- name attribute is used to specify which question has the user provided
+    an answer to -->
+    <br>
+    <label for="email">Your email</label>
+    <input type="email" name="yourEmail" value="">
+    <br>
+    <label for="">Your message:</label>
+    <br>
+    <textarea name="yourMessage" rows="10" cols="40">Maximum of 1000 characters - nobody is going to read your wall of text.</textarea>
+    <br>
+    <label for="stupidityTest">Are you stupid?</label>
+    <input type="submit" name="stupidityTest" value="Yes!" formaction="https://www.youtube.com/watch?v=XdAJrQ2kHv4">
+    <!-- formaction = what happens upon clicking on the submit button, can be a link or a mailto. -->
+    <!-- Takes precedence over <form action=""> -->
+    <input type="button" name="stupidityTest" value="No!">
+    <br>
+    <label for="stupidityDoublecheck">Are you sure?</label>
+    <input type="checkbox" name="stupidityDoublecheck" value="yes">
+    <br>
+    <label for="looks">Rate your looks on a scale 1-10</label>
+    <input type="range" name="looks" value="5" min="1" max="10" step="1" list="tickmarks">
+    <datalist id="tickmarks">
+      <option value="1" label="1"></option>
+      <option value="5" label="5"></option>
+      <option value="10" label="10"></option>
+    </datalist>
+    <br>
+    <label for="doublecheck">Have you answered all the questions above?</label>
+    <input type="checkbox" name="doublecheck" value="yes">
+    <br>
+    <label for="date">Today's date</label>
+    <input type="date" name="date" value="">
+    <br>
+    <label for="SubmitApp">Submit your message?</label>
+    <input type="submit" name="" value="JUST DO IT ✅">
+  </form>
+
+
+</body>
+
+</html>
